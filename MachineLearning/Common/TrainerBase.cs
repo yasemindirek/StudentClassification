@@ -79,7 +79,7 @@ namespace StudentClassification.MachineLearning.Common
         private EstimatorChain<NormalizingTransformer> BuildDataProcessingPipeline()
         {
             var dataProcessPipeline = MlContext.Transforms.Conversion.MapValueToKey(inputColumnName: nameof(StudentsData.Label), outputColumnName: "Label")
-               .Append(MlContext.Transforms.Concatenate("Features",nameof(StudentsData.CorrectAnswers), nameof(StudentsData.AnswerTime)))
+               .Append(MlContext.Transforms.Concatenate("Features",nameof(StudentsData.CorrectAnswer), nameof(StudentsData.AnswerTime)))
                .Append(MlContext.Transforms.NormalizeMinMax("Features", "Features"))
                .AppendCacheCheckpoint(MlContext);
 

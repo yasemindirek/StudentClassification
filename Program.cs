@@ -13,8 +13,8 @@ namespace StudentClassification
             // New sample to be tested
             var newSample = new StudentsData
             {
-                CorrectAnswers = 100,
-                AnswerTime = 30
+                CorrectAnswer = 187,
+                AnswerTime = 250
          
             };
 
