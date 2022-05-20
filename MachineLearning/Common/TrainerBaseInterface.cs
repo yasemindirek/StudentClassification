@@ -6,7 +6,7 @@ namespace StudentClassification.MachineLearning.Common
     /// <summary>
     /// Interface description class
     /// </summary>
-    public interface ITrainerBase
+    public interface TrainerBaseInterface
     {
         string Name { get; }
         void Fit(string trainingFileName);

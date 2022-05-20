@@ -12,6 +12,7 @@ namespace StudentClassification.MachineLearning.Trainers
             Name = "LBFGS Maximum Entropy";
             _model = MlContext.MulticlassClassification.Trainers
               .LbfgsMaximumEntropy(labelColumnName: "Label", featureColumnName: "Features");
+
         }
     }
 }

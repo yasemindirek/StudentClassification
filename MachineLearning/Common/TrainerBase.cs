@@ -14,7 +14,7 @@ namespace StudentClassification.MachineLearning.Common
     /// This class exposes methods for training, evaluating and saving ML Models.
     /// Classes that inherit this class need to assing concrete model and name; and to implement data pre-processing.
     /// </summary>
-    public abstract class TrainerBase<TParameters> : ITrainerBase
+    public abstract class TrainerBase<TParameters> : TrainerBaseInterface
         where TParameters : class
     {
         public string Name { get; protected set; } // to add the name of the algorithm
