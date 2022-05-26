@@ -26,7 +26,7 @@ namespace StudentClassification.MachineLearning.Predictors
         /// Runs prediction on new data.
         /// </summary>
         /// <param name="newSample">New data sample.</param>
-        /// <returns>PalmerPenguinsData object, which contains predictions made by model.</returns>
+        /// <returns>StudentsData object, which contains predictions made by model.</returns>
         public StudentsPrediction Predict(StudentsData newSample)
         {
             LoadModel();

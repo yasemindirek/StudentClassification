@@ -54,7 +54,7 @@ namespace StudentClassification
             Console.WriteLine($"Macro Accuracy: {modelMetrics.MacroAccuracy:#.##}{Environment.NewLine}" +
                               $"Micro Accuracy: {modelMetrics.MicroAccuracy:#.##}{Environment.NewLine}" +
                               $"Log Loss: {modelMetrics.LogLoss:#.##}{Environment.NewLine}" +
-                              $"Log Loss Reduction: {modelMetrics.LogLossReduction:#.##}{Environment.NewLine}");
+                              $"Log Loss Reduction: {modelMetrics.LogLossReduction:#.##}{Environment.NewLine}" );
 
 
             trainer.Save();
